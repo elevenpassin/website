@@ -25,10 +25,12 @@ const IndexPage = () => (
     />
     <section className="updates">
       <Title big={true}>photons from the far side of the universe</Title>
-      <LiveEntry />
-      <LiveEntry />
-      <LiveEntry />
-      <LiveEntry />
+      <section className="entry-list">
+        <LiveEntry />
+        <LiveEntry />
+        <LiveEntry />
+        <LiveEntry />
+      </section>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Image />
       </div>

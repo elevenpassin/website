@@ -3,3 +3,7 @@
   grid-template-rows: 0.1fr auto 0.2fr;
   grid-row: 2;
 }
+
+.updates .entry-list {
+  padding-top: 20px;
+}

@@ -664,18 +664,27 @@ body,
 
 .logo {
   perspective: 1000px;
+  isolation: isolate;
 }
 
 .logo-leftwing {
   transform-origin: right;
   animation: flapLeftWing 0.7s infinite;
   animation-timing-function: ease-in-out;
+  mix-blend-mode: hard-light;
+  /* fill: rgb(255, 0, 107); */
+  fill: #ff00ff;
+  opacity: 0.5;
 }
 
 .logo-rightwing {
   transform-origin: left;
   animation: flapRightWing 0.7s infinite;
   animation-timing-function: ease-in-out;
+  mix-blend-mode: hard-light;
+  /* fill: rgb(0, 204, 232); */
+  fill: #00ffff;
+  opacity: 0.5;
 }
 
 .logo-tentacle {

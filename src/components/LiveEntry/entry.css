@@ -1,0 +1,53 @@
+.entry {
+  width: max-content;
+  display: grid;
+  grid-template-columns: 50px 0.9fr;
+}
+
+.entry .content {
+  grid-column: 2;
+}
+
+.entry .timestamp {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.entry h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.entry .source {
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: right;
+}
+
+.entry .design {
+  display: grid;
+  grid-template-rows: 0.4fr 40px auto;
+}
+
+.entry .design .topline {
+  grid-row: 1;
+}
+.entry .design .anchor {
+  grid-row: 2;
+  background: black;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  margin: auto;
+}
+.entry .design .bottomline {
+  grid-row: 3;
+}
+
+.entry .design .line {
+  background: black;
+  width: 3px;
+  margin: 0 auto;
+}

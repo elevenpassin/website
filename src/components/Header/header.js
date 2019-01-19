@@ -37,6 +37,8 @@ const Header = () => (
         <footer>
           © buoyantair, 2019.
           <br />
+          built with {` `}
+          <a href="https://www.gatsbyjs.org">gatsby</a> <br />
           view source
         </footer>
       </div>

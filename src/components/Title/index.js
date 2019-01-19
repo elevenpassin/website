@@ -1,11 +1,12 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './title.css'
 
 // const TitlePart = ({ children }) => {
 //   return <div className="title-part">{children}</div>
 // }
 
-export default ({ children }) => {
+const Title = ({ big, children }) => {
   // const lines = []
 
   // const split = children.split(' ')
@@ -15,5 +16,12 @@ export default ({ children }) => {
   //   <TitlePart key={index}>{line}</TitlePart>
   // ))
 
-  return <div className="title">{children}</div>
+  return <div className={big ? 'title big' : 'title'}>{children}</div>
 }
+
+Title.propTypes = {
+  children: PropTypes.node.isRequired,
+  big: PropTypes.bool,
+}
+
+export default Title

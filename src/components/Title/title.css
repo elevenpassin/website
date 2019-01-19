@@ -2,7 +2,6 @@
 .title {
   width: max-content;
   padding: 0px 10px;
-  margin: 2px;
   background: black;
   color: white;
 }
@@ -11,4 +10,9 @@
   font-weight: bold;
   text-transform: lowercase;
   letter-spacing: 0.2rem;
+}
+.big {
+  padding: 10px;
+  font-size: 20px;
+  height: auto;
 }

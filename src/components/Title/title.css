@@ -1,0 +1,14 @@
+.title-part,
+.title {
+  width: max-content;
+  padding: 0px 10px;
+  margin: 2px;
+  background: black;
+  color: white;
+}
+.title {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: 0.2rem;
+}

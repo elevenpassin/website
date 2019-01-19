@@ -1,0 +1,21 @@
+.elsewhere {
+  margin-top: 40px;
+}
+
+.elsewhere table {
+  margin-top: 10px;
+  line-height: 1.2em;
+  font-size: 15px;
+  font-weight: light;
+  letter-spacing: 0.1rem;
+  table-layout: auto;
+}
+
+.elsewhere table td {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  border: none;
+  height: auto;
+}

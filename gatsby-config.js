@@ -23,39 +23,27 @@ module.exports = {
         profile: 'github.com/buoyantair',
         link: 'https://github.com/buoyantair',
       },
-      {
-        name: 'peertube',
-        profile: '@snugglecuddle@video.pam.loki',
-      },
-      {
-        name: 'gallery',
-        profile: '@dekkogurl@gallery.pam.loki',
-      },
     ],
     siteMenuData: [
       {
         name: 'home',
         destination: '/',
+        external: false,
       },
       {
         name: 'about',
         destination: '/about',
+        external: false,
       },
       {
         name: 'code',
-        destination: '/code',
+        destination: 'https://gitlab.com/buoyantair/',
+        external: true,
       },
       {
         name: 'writings',
-        destination: '/writings',
-      },
-      {
-        name: 'art',
-        destination: '/art',
-      },
-      {
-        name: 'music',
-        destination: '/music',
+        destination: 'https://buoyantair.wordpress.com',
+        external: true,
       },
     ],
   },

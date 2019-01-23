@@ -73,11 +73,12 @@ class IndexPage extends Component {
         <section className="updates">
           <Title big={true}>photons from the far side of the universe</Title>
           <section className="entry-list">
-            {renderList &&
+            {(renderList &&
               renderList.length &&
               renderList.map(entry => (
                 <LiveEntry key={entry.ID || entry.id} entry={entry} />
-              ))}
+              ))) ||
+              null}
           </section>
         </section>
       </Layout>

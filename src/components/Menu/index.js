@@ -10,17 +10,23 @@ const siteMenuQuery = graphql`
         siteMenuData {
           name
           destination
+          external
         }
       }
     }
   }
 `
 
-const MenuItem = ({ name, destination }) => (
-  <Link className="menu-item" to={destination}>
-    {name}
-  </Link>
-)
+const MenuItem = ({ name, destination, external }) =>
+  external ? (
+    <a className="menu-item" href={destination}>
+      {name}
+    </a>
+  ) : (
+    <Link className="menu-item" to={destination}>
+      {name}
+    </Link>
+  )
 
 export default () => (
   <StaticQuery

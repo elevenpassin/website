@@ -3,23 +3,60 @@ import PropTypes from 'prop-types'
 
 import './entry.css'
 
-const LiveEntry = ({ children }) => (
-  <div className="entry">
-    <section className="design">
-      <div className="line topline" />
-      <div className="anchor" />
-      <div className="line bottomline" />
-    </section>
-    <section className="content">
-      <div className="timestamp">1st Of January, 2019</div>
-      <h2>Last night's dinner was awesome!</h2>
-      <div className="source">via @buoyantair@social.sunshinegardens.org</div>
-    </section>
-  </div>
-)
+const LiveEntry = ({ entry }) => {
+  const entryType = entry.type
+
+  let date = new Date()
+  let rootURL
+  let title
+  let href
+
+  switch (entryType) {
+    case 'PullRequestEvent':
+      date = new Date()
+      href = entry.payload.pull_request._links.html.href
+      rootURL = href.split('//')[1].split('/')[0]
+      title = `buoyantair contributed to ${entry.repo.name} via pull request #${
+        entry.payload.number
+      }`
+      break
+    case 'post':
+      date = new Date(entry.date)
+      rootURL = entry.URL.split('//')[1].split('/')[0]
+      title = entry.title
+      href = entry.URL
+      break
+    default:
+      break
+  }
+
+  return (
+    <div className="entry">
+      <section className="design">
+        <div className="line topline" />
+        <div className="anchor" />
+        <div className="line bottomline" />
+      </section>
+      <section className="content">
+        <div className="timestamp">
+          {date.toLocaleDateString('en-IN', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+          })}
+        </div>
+        <a href={href}>
+          <h2>{title}</h2>
+          <div className="source">via {rootURL}</div>
+        </a>
+      </section>
+    </div>
+  )
+}
 
 LiveEntry.propTypes = {
-  children: PropTypes.node,
+  entry: PropTypes.object,
 }
 
 export default LiveEntry

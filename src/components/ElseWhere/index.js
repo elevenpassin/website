@@ -28,18 +28,20 @@ export default () => (
       <div className="elsewhere">
         <Title>Else where</Title>
         <table>
-          {elseWhere.map(({ name, profile, link }, key) => (
-            <tr key={key}>
-              <td>{name}</td>
-              {link ? (
-                <td>
-                  <a href={link}>{profile}</a>
-                </td>
-              ) : (
-                <td>{profile}</td>
-              )}
-            </tr>
-          ))}
+          <tbody>
+            {elseWhere.map(({ name, profile, link }, key) => (
+              <tr key={key}>
+                <td>{name}</td>
+                {link ? (
+                  <td>
+                    <a href={link}>{profile}</a>
+                  </td>
+                ) : (
+                  <td>{profile}</td>
+                )}
+              </tr>
+            ))}
+          </tbody>
         </table>
       </div>
     )}

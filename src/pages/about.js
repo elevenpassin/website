@@ -19,13 +19,15 @@ const SecondPage = () => (
         'developer',
       ]}
     />
-    <Title big={true}>about buoyantair</Title>
-    <section>
-      Hey! I'm a javascript developer working on <i>free</i> and open source
-      software. I have experience working in teams, designing and developing
-      word-class projects using various modern web technologies. <br />
-      You can find my resume <a href={resume}>here.</a>
-    </section>
+    <div className=".about">
+      <Title big={true}>about buoyantair</Title>
+      <section>
+        Hey! I'm a javascript developer working on <i>free</i> and open source
+        software. I have experience working in teams, designing and developing
+        word-class projects using various modern web technologies. <br />
+        You can find my resume <a href={resume}>here.</a>
+      </section>
+    </div>
   </Layout>
 )
 

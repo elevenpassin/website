@@ -2,8 +2,9 @@
   grid-column: 1;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.4fr 0.2fr 0.25fr auto auto;
+  grid-template-rows: 254px 2.25rem 0.25fr auto 150px 100px;
   padding: 50px;
+  align-items: flex-start;
 }
 
 .logo {
@@ -17,7 +18,9 @@
   letter-spacing: 0.4rem;
 }
 footer {
+  grid-row: 6;
   letter-spacing: 0.1rem;
   font-size: 15px;
   line-height: 1rem;
+  align-self: flex-end;
 }

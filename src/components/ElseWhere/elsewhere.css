@@ -1,5 +1,6 @@
 .elsewhere {
-  margin-top: 40px;
+  grid-row: 5;
+  align-self: flex-end;
 }
 
 .elsewhere table {

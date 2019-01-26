@@ -19,9 +19,9 @@ const SecondPage = () => (
         'developer',
       ]}
     />
-    <div className=".about">
+    <div className="about">
       <Title big={true}>about buoyantair</Title>
-      <section>
+      <section className="desc">
         Hey! I'm a javascript developer working on <i>free</i> and open source
         software. I have experience working in teams, designing and developing
         word-class projects using various modern web technologies. <br />

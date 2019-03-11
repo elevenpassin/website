@@ -1,51 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `buoyantair`,
-    description: `buoyantair is a frontend enginer and free software enthusiast from india.`,
-    author: `@buoyantair`,
-    elseWhere: [
-      {
-        name: 'fediverse',
-        profile: '@buoyantair@social.sunshinegardens.org',
-        link: 'https://social.sunshinegardens.org/users/buoyantair',
-      },
-      {
-        name: 'matrix',
-        profile: '@regula@chat.sunshinegardens.org',
-      },
-      {
-        name: 'gitlab',
-        profile: 'gitlab.com/buoyantair',
-        link: 'https://gitlab.com/buoyantair',
-      },
-      {
-        name: 'github',
-        profile: 'github.com/buoyantair',
-        link: 'https://github.com/buoyantair',
-      },
-    ],
-    siteMenuData: [
-      {
-        name: 'home',
-        destination: '/',
-        external: false,
-      },
-      {
-        name: 'about',
-        destination: '/about',
-        external: false,
-      },
-      {
-        name: 'code',
-        destination: 'https://gitlab.com/buoyantair/',
-        external: true,
-      },
-      {
-        name: 'writings',
-        destination: 'https://buoyantair.wordpress.com',
-        external: true,
-      },
-    ],
+    title: `Gatsby Default Starter`,
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -71,7 +28,7 @@ module.exports = {
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
+    // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
   ],
 }

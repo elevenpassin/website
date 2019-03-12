@@ -1,8 +1,8 @@
 .entry {
   width: fit-content;
   display: grid;
-  min-height: 100px;
-  grid-template-columns: 50px 0.9fr;
+  height: 25vw;
+  grid-template-columns: 50px auto;
 }
 
 .entry .content {
@@ -11,9 +11,8 @@
   flex-flow: column;
   justify-content: center;
 }
-
 .entry .timestamp {
-  font-size: 12px;
+  font-size: 3.5vw;
   font-weight: lighter;
 }
 
@@ -22,14 +21,14 @@
 }
 
 .entry h2 {
-  font-size: 20px;
+  font-size: 5vw;
   font-weight: bold;
   margin: 0;
   padding: 0;
 }
 
 .entry .source {
-  font-size: 12px;
+  font-size: 3.5vw;
   font-weight: lighter;
 }
 
@@ -85,4 +84,46 @@
   background: black;
   width: 1px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 400px) {
+  .entry {
+    height: 18vw;
+  }
+
+  .entry h2 {
+    font-size: 4vw;
+  }
+
+  .entry .source, .entry .timestamp {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .entry {
+    height: 14vw;
+  }
+
+  .entry h2 {
+    font-size: 3vw;
+  }
+
+  .entry .source, .entry .timestamp {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .entry {
+    height: 8vw;
+  }
+
+  .entry h2 {
+    font-size: 2vw;
+  }
+
+  .entry .source, .entry .timestamp {
+    font-size: 1vw;
+  }
 }

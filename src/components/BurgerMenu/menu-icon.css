@@ -2,8 +2,8 @@
   position: fixed;
   right: 2rem;
   top: 2rem;
-  height: 3vw;
-  width: 5vw;
+  height: 6vw;
+  width: 6vw;
   --animation-duration: 0.5s;
 }
 
@@ -27,4 +27,18 @@
 .burger-menu.toggled .menu-middle-stick {
   cursor: pointer;
   transform: translateX(30%);
+}
+
+@media screen and (min-width: 400px) {
+  .burger-menu {
+    height: 4vw;
+    width: 4vw;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .burger-menu {
+    height: 3vw;
+    width: 3vw;
+  }
 }

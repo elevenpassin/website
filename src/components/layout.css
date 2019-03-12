@@ -13,3 +13,11 @@
 .layout.blur {
   filter: blur(4px);
 }
+
+a,
+a:hover,
+a:active,
+a:visited {
+  color: initial;
+  text-decoration: underline;
+}

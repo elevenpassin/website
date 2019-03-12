@@ -29,7 +29,7 @@
   text-align: right;
 }
 
-.mobile-menu li {
+.mobile-menu a {
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
@@ -38,31 +38,31 @@
   transform: translateX(30%);
 }
 
-.mobile-menu li:nth-child(2) {
+.mobile-menu a:nth-child(2) {
   transform: translateX(20%);
 }
 
-.mobile-menu li:nth-child(3) {
+.mobile-menu a:nth-child(3) {
   transform: translateX(10%);
 }
 
-.mobile-menu li:nth-child(4) {
+.mobile-menu a:nth-child(4) {
   transform: translateX(20%);
 }
 
-.mobile-menu li:hover {
+.mobile-menu a:hover {
   transform: translateX(0%);
   cursor: pointer;
 }
 
-.mobile-menu li .item-text {
+.mobile-menu a .item-text {
   display: flex;
   flex-flow: column;
   justify-content: center;
   margin-right: 10px;
 }
 
-.mobile-menu li .item-line {
+.mobile-menu a .item-line {
   content: "";
   display: block;
   height: 1px;

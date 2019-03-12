@@ -29,10 +29,8 @@ const MobileMenu = ({ toggleMenu, menuToggled }) => (
     <ul>
       {menuItems.map(item => (
         <Link to={`/${item.name !== "home" ? item.name : ""}`} key={item.name}>
-          <li>
-            <span className="item-text">{item.name}</span>
-            <span className="item-line" />
-          </li>
+          <span className="item-text">{item.name}</span>
+          <span className="item-line" />
         </Link>
       ))}
     </ul>

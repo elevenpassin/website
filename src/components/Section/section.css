@@ -12,7 +12,8 @@
   letter-spacing: 5px;
 }
 
-.section p {
+.section p,
+.section a {
   margin-top: 15px;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;

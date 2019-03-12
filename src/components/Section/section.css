@@ -1,9 +1,11 @@
 .section {
+  position: relative;
   grid-column: 2;
   color: #000;
-  margin-top: 50vh;
-  transform: translateY(-50%);
-  height: 100px;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
 .section h1 {

@@ -6,6 +6,15 @@ import SEO from "../components/seo"
 import Section from "../components/Section"
 import Divider from "../components/Divider"
 import Feed from "../components/Feed"
+import "./index.css"
+
+
+const VerticalLine = () => (
+  <div className="scroll-indicator">
+    <span className="text">scroll down</span>
+    <div className="line"/>
+  </div>
+);
 
 const IndexPage = () => (
   <StaticQuery
@@ -26,6 +35,7 @@ const IndexPage = () => (
           <h1>{data.site.siteMetadata.title}</h1>
           <p>{data.site.siteMetadata.description}</p>
           <Divider />
+          <VerticalLine />
         </Section>
         <Feed />
       </Layout>

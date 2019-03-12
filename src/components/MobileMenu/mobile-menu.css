@@ -33,7 +33,7 @@
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
-  height: 47px;
+  height: 10vh;
   transition: transform 0.5s;
   transform: translateX(30%);
 }
@@ -57,12 +57,12 @@
 
 .mobile-menu a .item-text {
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  letter-spacing: 3px;
+  font-size: 6vw;
+  letter-spacing: 0.8vw;
   display: flex;
   flex-flow: column;
   justify-content: center;
-  margin-right: 10px;
+  margin-right: 2vw;
 }
 
 .mobile-menu a .item-text.active {
@@ -75,6 +75,24 @@
   height: 1px;
   position: relative;
   top: 50%;
-  width: 100px;
+  width: 30vw;
   background: black;
+}
+
+@media screen and (min-width: 400px) {
+  .mobile-menu a .item-text {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .mobile-menu a .item-text {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .mobile-menu a .item-text {
+    font-size: 3vw;
+  }
 }

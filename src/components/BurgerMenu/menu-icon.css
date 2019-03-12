@@ -1,0 +1,26 @@
+.burger-menu {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  height: 20px;
+  width: 30px;
+  --animation-duration: 0.5s;
+}
+
+.burger-menu.toggled {
+  cursor: pointer;
+}
+.menu-corner-stick,
+.menu-middle-stick {
+  transition: transform var(--animation-duration);
+}
+
+.burger-menu.toggled .menu-corner-stick {
+  cursor: pointer;
+  transform: translateX(-30%);
+}
+
+.burger-menu.toggled .menu-middle-stick {
+  cursor: pointer;
+  transform: translateX(30%);
+}

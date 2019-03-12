@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 import "./mobile-menu.css"
 
 const menuItems = [
@@ -20,21 +21,26 @@ const menuItems = [
   },
 ]
 
-const MobileMenu = ({ menuToggled }) => (
-  <nav className={`mobile-menu ${menuToggled && "toggled"}`}>
+const MobileMenu = ({ toggleMenu, menuToggled }) => (
+  <nav
+    onClick={() => toggleMenu(!menuToggled)}
+    className={`mobile-menu ${menuToggled && "toggled"}`}
+  >
     <ul>
-      .
       {menuItems.map(item => (
-        <li key={item.name}>
-          <span className="item-text">{item.name}</span>
-          <span className="item-line" />
-        </li>
+        <Link to={`/${item.name !== "home" ? item.name : ""}`} key={item.name}>
+          <li>
+            <span className="item-text">{item.name}</span>
+            <span className="item-line" />
+          </li>
+        </Link>
       ))}
     </ul>
   </nav>
 )
 
 MobileMenu.propTypes = {
+  toggleMenu: PropTypes.func.isRequired,
   menuToggled: PropTypes.bool.isRequired,
 }
 

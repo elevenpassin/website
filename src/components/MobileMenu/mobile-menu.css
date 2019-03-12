@@ -13,6 +13,14 @@
   transform: translateX(0%);
 }
 
+.mobile-menu a,
+.mobile-menu a:hover,
+.mobile-menu a:active,
+.mobile-menu a:visited {
+  color: initial;
+  text-decoration: none;
+}
+
 .mobile-menu ul {
   position: fixed;
   right: 0;

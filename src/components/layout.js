@@ -16,7 +16,10 @@ function Layout({ children }) {
   return (
     <>
       <div className={`layout ${menuToggled && "blur"}`}>{children}</div>
-      <MobileMenu menuToggled={menuToggled} />
+      <MobileMenu
+        menuToggled={menuToggled}
+        toggleMenu={setMenuToggled.bind(this)}
+      />
       <BurgerMenu
         menuToggled={menuToggled}
         toggleMenu={setMenuToggled.bind(this)}

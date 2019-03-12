@@ -6,18 +6,23 @@ import "./mobile-menu.css"
 const menuItems = [
   {
     name: "home",
+    path: '/'
   },
   {
     name: "about",
+    path: '/about'
   },
   {
     name: "code",
+    path: '/code'
   },
   {
     name: "writings",
+    path: '/blog'
   },
   {
     name: "contact",
+    path: '/contact'
   },
 ]
 
@@ -28,8 +33,10 @@ const MobileMenu = ({ toggleMenu, menuToggled }) => (
   >
     <ul>
       {menuItems.map(item => (
-        <Link to={`/${item.name !== "home" ? item.name : ""}`} key={item.name}>
-          <span className="item-text">{item.name}</span>
+        <Link to={item.path} key={item.name}>
+          <span className={`item-text ${window.location.pathname === item.path ? "active" : ""}`}>
+          {item.name}
+          </span>
           <span className="item-line" />
         </Link>
       ))}

@@ -56,10 +56,17 @@
 }
 
 .mobile-menu a .item-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  letter-spacing: 3px;
   display: flex;
   flex-flow: column;
   justify-content: center;
   margin-right: 10px;
+}
+
+.mobile-menu a .item-text.active {
+  font-weight: bold;
 }
 
 .mobile-menu a .item-line {

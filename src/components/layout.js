@@ -8,7 +8,14 @@ import React from "react"
 import PropTypes from "prop-types"
 import "./layout.css"
 
-const Layout = ({ children }) => <div className="layout">{children}</div>
+import BurgerMenu from "./BurgerMenu"
+
+const Layout = ({ children }) => (
+  <>
+    <div className="layout">{children}</div>
+    <BurgerMenu />
+  </>
+)
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

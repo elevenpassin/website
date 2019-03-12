@@ -1,0 +1,34 @@
+.feed {
+  grid-column: 2;
+  margin: auto 0;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr;
+}
+
+.inverted-heading {
+  background: black;
+  color: white;
+  height: 40px;
+  width: fit-content;
+  padding: 0 20px;
+  display: block;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.entry-list {
+  width: fit-content;
+  grid-column: 1;
+  grid-row: 2;
+}
+@media screen and (min-width: 800px) {
+  .feed {
+    grid-column: 4;
+  }
+}

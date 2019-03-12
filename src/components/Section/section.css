@@ -22,3 +22,14 @@
 .section .divider {
   margin-top: 15px;
 }
+
+@media screen and (min-width: 800px) {
+  .section h1 {
+    font-size: 35px;
+  }
+
+  .section p,
+  .section a {
+    font-size: 20px;
+  }
+}

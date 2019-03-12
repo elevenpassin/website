@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import MobileMenu from "./MobileMenu"
 import BurgerMenu from "./BurgerMenu"
 import "./layout.css"
+
 function Layout({ children }) {
   const [menuToggled, setMenuToggled] = useState(false)
 

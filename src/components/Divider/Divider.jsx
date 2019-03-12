@@ -1,12 +1,13 @@
 import React from "react"
 
+import "./divider.css"
+
 export default () => (
   <svg
     className="divider"
-    width="58"
-    height="14"
+    xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 58 14"
-    fill="none"
+    version="1.1"
     xmlns="http://www.w3.org/2000/svg"
   >
     <line y1="6.75482" x2="58" y2="6.75482" stroke="black" />

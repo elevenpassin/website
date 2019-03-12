@@ -1,9 +1,9 @@
 .burger-menu {
   position: fixed;
-  right: 10px;
-  top: 10px;
-  height: 20px;
-  width: 30px;
+  right: 2rem;
+  top: 2rem;
+  height: 3vw;
+  width: 5vw;
   --animation-duration: 0.5s;
 }
 

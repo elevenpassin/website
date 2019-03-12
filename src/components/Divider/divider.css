@@ -1,0 +1,17 @@
+
+.divider {
+  width: 16vw;
+}
+
+
+@media screen and (min-width: 400px) {
+  .divider {
+    width: 10vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .divider {
+    width: 6vw;
+  }
+}

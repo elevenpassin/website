@@ -8,13 +8,12 @@ import Divider from "../components/Divider"
 import Feed from "../components/Feed"
 import "./index.css"
 
-
 const VerticalLine = () => (
   <div className="scroll-indicator">
     <span className="text">scroll down</span>
-    <div className="line"/>
+    <div className="line" />
   </div>
-);
+)
 
 const IndexPage = () => (
   <StaticQuery

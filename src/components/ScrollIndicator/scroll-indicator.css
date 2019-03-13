@@ -9,7 +9,7 @@
   bottom: 0;
 }
 
-.scroll-indicator .text {
+.scroll-indicator .scroll-indicator__text {
   position: relative;
   letter-spacing: 2px;
   transform: rotateZ(0.5turn);
@@ -23,11 +23,11 @@
   margin-bottom: 10px;
 }
 
-.scroll-indicator .line {
+.scroll-indicator .scroll-indicator__line {
   position: relative;
   height: 20vh;
   background: black;
-  width: 1px;
+  width: 0.26vw;
   margin: 0 auto;
 }
 

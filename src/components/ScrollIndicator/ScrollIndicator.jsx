@@ -4,8 +4,8 @@ import "./scroll-indicator.css"
 
 const ScrollIndicator = () => (
   <div className="scroll-indicator">
-    <span className="text">scroll down</span>
-    <div className="line" />
+    <span className="scroll-indicator__text">scroll down</span>
+    <div className="scroll-indicator__line" />
   </div>
 )
 

@@ -38,6 +38,7 @@
 
 @media screen and (min-width: 800px) {
   .burger-menu {
+    display: none;
     height: 3vw;
     width: 3vw;
   }

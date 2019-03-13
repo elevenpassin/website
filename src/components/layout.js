@@ -9,6 +9,7 @@ import PropTypes from "prop-types"
 
 import MobileMenu from "./MobileMenu"
 import BurgerMenu from "./BurgerMenu"
+import Header from './Header'
 import "./layout.css"
 
 function Layout({ children }) {
@@ -16,7 +17,12 @@ function Layout({ children }) {
 
   return (
     <>
-      <div className={`layout ${menuToggled ? "blur" : ""}`}>{children}</div>
+      <div className={`layout ${menuToggled ? "blur" : ""}`}>
+        <Header />
+        <div className="body">
+          {children}
+        </div>
+      </div>
       <MobileMenu
         menuToggled={menuToggled}
         toggleMenu={setMenuToggled.bind(this)}
@@ -28,6 +34,7 @@ function Layout({ children }) {
     </>
   )
 }
+
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

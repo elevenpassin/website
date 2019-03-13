@@ -92,6 +92,9 @@
 }
 
 @media screen and (min-width: 800px) {
+  .mobile-menu {
+    display: none;
+  }
   .mobile-menu a .item-text {
     font-size: 3vw;
   }

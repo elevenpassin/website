@@ -3,6 +3,28 @@ module.exports = {
     title: `buoyantair`,
     description: `frontend engineer & free software enthusiast`,
     author: `buoyantair`,
+    menuItems: [
+      {
+        name: "home",
+        path: '/'
+      },
+      {
+        name: "about",
+        path: '/about'
+      },
+      {
+        name: "code",
+        path: '/code'
+      },
+      {
+        name: "writings",
+        path: '/blog'
+      },
+      {
+        name: "contact",
+        path: '/contact'
+      },
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

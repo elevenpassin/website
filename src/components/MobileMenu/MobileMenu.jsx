@@ -14,6 +14,7 @@ const MobileMenu = ({ toggleMenu, menuToggled }) => (
             menuItems {
               name
               path
+              external
             }
           }
         }
@@ -27,14 +28,21 @@ const MobileMenu = ({ toggleMenu, menuToggled }) => (
             className={`mobile-menu ${menuToggled ? "toggled" : ""}`}
           >
             <ul>
-              {data.site.siteMetadata.menuItems.map(item => (
-                <Link to={item.path} key={item.name}>
+              {data.site.siteMetadata.menuItems.map(item => item.external ? (
+                <a href={item.path} key={item.name}>
                   <span className={`item-text ${location.pathname === item.path ? "active" : ""}`}>
                     {item.name}
                   </span>
                   <span className="item-line" />
-                </Link>
-              ))}
+                </a>
+              ) : (
+                  <Link to={item.path} key={item.name}>
+                    <span className={`item-text ${location.pathname === item.path ? "active" : ""}`}>
+                      {item.name}
+                    </span>
+                    <span className="item-line" />
+                  </Link>
+                ))}
             </ul>
           </nav>
         )

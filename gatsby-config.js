@@ -14,16 +14,14 @@ module.exports = {
       },
       {
         name: "code",
-        path: '/code'
+        path: 'https://github.com/buoyantair',
+        external: true
       },
       {
         name: "writings",
-        path: '/blog'
-      },
-      {
-        name: "contact",
-        path: '/contact'
-      },
+        path: 'https://buoyantair.wordpress.com/blog/',
+        external: true
+      }
     ]
   },
   plugins: [

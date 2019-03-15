@@ -7,6 +7,7 @@ import Divider from "../Divider"
 import ScrollIndicator from '../ScrollIndicator'
 import "./header.css";
 
+
 const Header = () => (
   <StaticQuery
     query={graphql`
@@ -18,6 +19,7 @@ const Header = () => (
             menuItems {
               name
               path
+              external
             }
           }
         }
@@ -35,14 +37,23 @@ const Header = () => (
                 <nav
                   className="desktop-menu"
                 >
-                  {data.site.siteMetadata.menuItems.map(item => (
-                    <Link className={location.pathname === item.path ? "active" : ""} to={item.path} key={item.name}>
+                  {data.site.siteMetadata.menuItems.map(({ external, path, name }) => external ? (
+                    <a className={location.pathname === path ? "active" : ""} href={path} key={name}>
                       <span className={`item-text`}>
-                        {item.name}
+                        {name}
                       </span>
                       <span className="item-line" />
-                    </Link>
-                  ))}
+                    </a>
+                  ) : (
+                      <Link className={location.pathname === path ? "active" : ""} to={path} key={name}>
+                        <span className={`item-text`}>
+                          {name}
+                        </span>
+                        <span className="item-line" />
+                      </Link>
+                    )
+
+                  )}
                 </nav>
               </Section>
               <ScrollIndicator />

@@ -16,6 +16,9 @@
 
 .layout .body {
   grid-column: 2;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
 a,

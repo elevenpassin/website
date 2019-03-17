@@ -7,7 +7,6 @@ import Divider from "../Divider"
 import ScrollIndicator from '../ScrollIndicator'
 import "./header.css";
 
-
 const Header = () => (
   <StaticQuery
     query={graphql`

@@ -20,11 +20,10 @@ export default function Template({
       />
       <div className="blog-post-container">
         <article className="blog-post">
-          <Section>
-            <h1>buoyantair</h1>
-            <h2>{frontmatter.title}</h2>
+          <section>
+            <h1>{frontmatter.title}</h1>
             <p>Published on {frontmatter.date}</p>
-          </Section>
+          </section>
           <Divider />
           <div
             className="blog-post-content"

@@ -77,7 +77,3 @@ code when it comes to libraries.
 So far this is the most productive year yet for me. Over the course of the year,
 I did learn quite a lot of things and there are things that I haven’t yet worked up to.
 2017 is past now.
-
-```
-
-```

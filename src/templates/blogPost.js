@@ -5,6 +5,8 @@ import Section from "../components/Section"
 import Divider from "../components/Divider"
 import { graphql } from "gatsby"
 
+import "./blogpost.css"
+
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
@@ -19,10 +21,11 @@ export default function Template({
       <div className="blog-post-container">
         <article className="blog-post">
           <Section>
-            <h1>{frontmatter.title}</h1>
-            <h2>{frontmatter.date}</h2>
-            <Divider />
+            <h1>buoyantair</h1>
+            <h2>{frontmatter.title}</h2>
+            <p>Published on {frontmatter.date}</p>
           </Section>
+          <Divider />
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}

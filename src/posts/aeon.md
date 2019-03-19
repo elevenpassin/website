@@ -8,18 +8,18 @@ Sharing my experiences from the year 2017, life and being optimistic about the y
 
 Last year, around this time, I was lost. I didn’t know where I was going with my life.
 I used to think a lot about future, I used to dream that once I finish my education,
-I will be doing a lot of amazing things, that I would be starting my own business and living 
-life on my own and helping others reach where I would be, but the reality as every kid may 
+I will be doing a lot of amazing things, that I would be starting my own business and living
+life on my own and helping others reach where I would be, but the reality as every kid may
 have experienced when they enter high school or college is that they’re not fit for this system.
-Part of the reason why they’re not fit for a system is that the system itself is not modeled 
-after each student’s individual and infinitely unique needs. It’s not possible. 
+Part of the reason why they’re not fit for a system is that the system itself is not modeled
+after each student’s individual and infinitely unique needs. It’s not possible.
 I knew the education system isn’t going to work out for me.
 
-By that time, I was 17, and I was making small games, level design and occasionally 
-I would do some 3D rendering and graphics work. This was not new to me, I was learning to make 
-games ever since I was 14 or so, learning basics of Unity3D, learning considerable 3D 
-modelling using Blender3D so that I can use the models in my games and finally discovering 
-ROBLOX which was one of the nicest places I’ve been to learn, play and to share our imagination 
+By that time, I was 17, and I was making small games, level design and occasionally
+I would do some 3D rendering and graphics work. This was not new to me, I was learning to make
+games ever since I was 14 or so, learning basics of Unity3D, learning considerable 3D
+modelling using Blender3D so that I can use the models in my games and finally discovering
+ROBLOX which was one of the nicest places I’ve been to learn, play and to share our imagination
 to the world beyond.
 
 A few months in, I wanted to move away from game development after my game did not work out
@@ -53,7 +53,8 @@ I’ll put together a list of few things I’ve learned this year, most of which
 either by working on projects or by looking at other’s code / documentation or the source
 code when it comes to libraries.
 
-## Things I’ve learned this year
+# Things I’ve learned this year
+
 - ES6, Typescript
 - Babel, Webpack, Gulp, ReactJS, Basics of Angular and Vue to compare with React.
 - NodeJS, GraphQL (!! ❤), Redux, React Router, Express
@@ -65,7 +66,7 @@ code when it comes to libraries.
 - It’s amazing how far we’ve come as a species
 - Consistency and Time management are important.
 - Exercise exercise exercise!
-- Write more diary (the number of entries doubled this year! which is amazing! ❤), try to 
+- Write more diary (the number of entries doubled this year! which is amazing! ❤), try to
   share your thoughts via Medium or a blog. More importantly, engage in conversations
   and participate more in events
 - JS ecosystem is pretty fat, don’t worry about the fatigue, worry only about short
@@ -77,3 +78,6 @@ So far this is the most productive year yet for me. Over the course of the year,
 I did learn quite a lot of things and there are things that I haven’t yet worked up to.
 2017 is past now.
 
+```
+
+```

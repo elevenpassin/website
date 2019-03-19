@@ -6,23 +6,23 @@ module.exports = {
     menuItems: [
       {
         name: "home",
-        path: '/'
+        path: "/",
       },
       {
         name: "about",
-        path: '/about'
+        path: "/about",
       },
       {
         name: "code",
-        path: 'https://github.com/buoyantair',
-        external: true
+        path: "https://github.com/buoyantair",
+        external: true,
       },
       {
         name: "writings",
-        path: 'https://buoyantair.wordpress.com/blog/',
-        external: true
-      }
-    ]
+        path: "https://buoyantair.wordpress.com/blog/",
+        external: true,
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -47,6 +47,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/`,
+        name: "posts",
+      },
+    },
+    "gatsby-transformer-remark",
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',

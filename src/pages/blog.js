@@ -33,7 +33,7 @@ const BlogPage = ({
   return (
     <Layout>
       <SEO
-        title="About"
+        title="Writings"
         keywords={[`blog`, `buoyantair`, `javascript`, "programming"]}
       />
       <Section>

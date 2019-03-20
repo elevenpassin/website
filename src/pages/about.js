@@ -7,7 +7,10 @@ import Divider from "../components/Divider"
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="About"
+      keywords={[`about`, `buoyantair`, `javascript`, "react", "developer"]}
+    />
     <Section>
       <h1>about</h1>
       <p>

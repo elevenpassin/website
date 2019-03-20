@@ -5,11 +5,13 @@ import SEO from "../components/seo"
 import Feed from "../components/Feed"
 import "./index.css"
 
-
 const IndexPage = () => (
   <div className="index-page">
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO
+        title="Home"
+        keywords={[`buoyantair`, `javascript`, `react`, "developer"]}
+      />
       <Feed />
     </Layout>
   </div>

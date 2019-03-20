@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Section from "../components/Section"
 import Divider from "../components/Divider"
 import { graphql } from "gatsby"
 

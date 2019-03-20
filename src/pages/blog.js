@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Skeleton from "react-loading-skeleton"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Section from "../components/Section"
@@ -10,8 +9,8 @@ import "./blog.css"
 
 const PostLink = ({ post }) => (
   <div className="blog-post-link">
-    <h1>{post.frontmatter.title || <Skeleton />}</h1>
-    <p>{post.excerpt || <Skeleton count={5} />}</p>
+    <h1>{post.frontmatter.title}</h1>
+    <p>{post.excerpt}</p>
   </div>
 )
 

@@ -19,8 +19,7 @@ module.exports = {
       },
       {
         name: "writings",
-        path: "https://buoyantair.wordpress.com/blog/",
-        external: true,
+        path: "/blog",
       },
     ],
   },

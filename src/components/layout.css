@@ -19,6 +19,7 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
+  padding-top: 10vh;
 }
 
 a,

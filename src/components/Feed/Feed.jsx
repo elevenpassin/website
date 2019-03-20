@@ -19,7 +19,7 @@ export default class Feed extends Component {
 
   componentDidMount() {
     fetch(
-      'https://public-api.wordpress.com/rest/v1.1/sites/buoyantair.wordpress.com/posts/'
+      "https://public-api.wordpress.com/rest/v1.1/sites/buoyantair.wordpress.com/posts/"
     )
       .then(resp => resp.json())
       .then(data => {
@@ -28,9 +28,9 @@ export default class Feed extends Component {
         })
       })
       .catch(console.error)
-    fetch('https://api.github.com/users/buoyantair/events')
+    fetch("https://api.github.com/users/buoyantair/events")
       .then(resp => resp.json())
-      .then(events => events.filter(x => x.type === 'PullRequestEvent'))
+      .then(events => events.filter(x => x.type === "PullRequestEvent"))
       .then(data => {
         this.setState({
           contributions: data,
@@ -56,7 +56,7 @@ export default class Feed extends Component {
         }
       })
       .reverse()
-    
+
     return (
       <ErrorBoundary>
         <div className="feed">

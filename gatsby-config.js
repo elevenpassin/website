@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://www.buoyantair.netlify.com`,
     title: `buoyantair`,
     description: `frontend engineer & free software enthusiast`,
     author: `buoyantair`,
@@ -65,9 +66,10 @@ module.exports = {
       options: {
         trackingId: "UA-136581772-1",
         head: true,
-        
       },
     },
     "gatsby-plugin-offline",
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-feed",
   ],
 }

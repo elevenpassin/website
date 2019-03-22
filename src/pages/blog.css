@@ -14,10 +14,36 @@
 
 .blog-posts-list .blog-post-link h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 2vw;
+  font-size: 6vw;
 }
 
 .blog-posts-list .blog-post-link p {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2vw;
+  font-size: 3.5vw;
+}
+
+
+
+@media screen and (min-width: 400px) {
+  .blog-posts-list .blog-post-link h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.5vw;
+  }
+  
+  .blog-posts-list .blog-post-link p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .blog-posts-list .blog-post-link h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+  }
+  
+  .blog-posts-list .blog-post-link p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
+  }
 }

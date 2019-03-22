@@ -22,7 +22,7 @@ const BlogPage = ({
   const Posts = (
     <section className="blog-posts-list">
       {edges.map(edge => (
-        <Link to={edge.node.frontmatter.path}>
+        <Link key={edge.node.id} to={edge.node.frontmatter.path}>
           <PostLink key={edge.node.id} post={edge.node} />
         </Link>
       ))}

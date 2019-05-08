@@ -1,4 +1,4 @@
-.header {
+header {
   grid-column: 2;
   height: 100vh;
   display: none;
@@ -8,23 +8,23 @@
   display: none;
 }
 
-.header .section {
+header section {
   margin-top: 50vh;
 }
 
 @media screen and (min-width: 800px) {
-  .header {
+  header {
     display: block;
     grid-column: 2;
   }
 
-  .header .section .desktop-menu {
+  header section .desktop-menu {
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
   }
 
-  .header .section .desktop-menu a {
+  header section .desktop-menu a {
     display: flex;
     flex-flow: row-reverse;
     justify-content: flex-end;
@@ -46,15 +46,14 @@
   }
 
   .desktop-menu a .item-text {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.2vw;
     letter-spacing: 0.2vw;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    
   }
-  
+
   .desktop-menu a.active .item-text {
     font-weight: bold;
   }
@@ -62,7 +61,7 @@
   .desktop-menu a.active .item-line {
     width: 4vw;
   }
-  
+
   .desktop-menu a .item-line {
     content: "";
     display: block;
@@ -72,11 +71,11 @@
     width: 3vw;
     background: black;
     margin-right: 1vw;
-  } 
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .header .section .desktop-menu a {
+  header section .desktop-menu a {
     height: 2vh;
   }
 }

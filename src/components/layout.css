@@ -10,7 +10,7 @@
   filter: blur(4px);
 }
 
-.layout .body {
+.layout main {
   grid-column: 2;
   display: flex;
   flex-flow: column;
@@ -32,7 +32,7 @@ a:visited {
     grid-template-columns: 0.5fr 45vw 1fr 45vw 0.5fr;
   }
 
-  .layout .body {
+  .layout main {
     grid-column: 4;
     display: flex;
     flex-flow: column;

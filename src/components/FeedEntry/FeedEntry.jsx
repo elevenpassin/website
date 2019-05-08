@@ -30,12 +30,12 @@ const FeedEntry = ({ entry }) => {
   }
 
   return (
-    <div className="entry">
-      <section className="design">
+    <article className="entry">
+      <div className="design">
         <div className="line topline" />
         <div className="anchor" />
         <div className="line bottomline" />
-      </section>
+      </div>
       <section className="content">
         <div className="timestamp">
           {date.toLocaleDateString("en-IN", {
@@ -50,7 +50,7 @@ const FeedEntry = ({ entry }) => {
           <div className="source">via {rootURL}</div>
         </a>
       </section>
-    </div>
+    </article>
   )
 }
 

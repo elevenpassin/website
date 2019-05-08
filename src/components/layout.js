@@ -19,7 +19,7 @@ function Layout({ children }) {
     <>
       <div className={`layout ${menuToggled ? "blur" : ""}`}>
         <Header />
-        <div className="body">{children}</div>
+        <main>{children}</main>
       </div>
       <MobileMenu
         menuToggled={menuToggled}

@@ -11,11 +11,11 @@ module.exports = {
       },
       {
         name: "about",
-        path: "/about",
+        path: "/about/",
       },
       {
         name: "writings",
-        path: "/blog",
+        path: "/blog/",
       },
       {
         name: "code",

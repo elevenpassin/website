@@ -14,13 +14,13 @@ module.exports = {
         path: "/about",
       },
       {
+        name: "writings",
+        path: "/blog",
+      },
+      {
         name: "code",
         path: "https://github.com/buoyantair",
         external: true,
-      },
-      {
-        name: "writings",
-        path: "/blog",
       },
     ],
   },

@@ -1,21 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Section from "../components/Section"
-import Divider from "../components/Divider"
 
 const NotFoundPage = () => (
-  <Layout>
+  <div>
     <SEO title="404: Not found" />
-    <Section>
+    <section>
       <h1>404</h1>
       <p>Oh boi, looks like you hit a deadend!</p>
       <Link to="/">Take me outta here!</Link>
       <br />
-      <Divider />
-    </Section>
-  </Layout>
+    </section>
+  </div>
 )
 
 export default NotFoundPage

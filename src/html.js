@@ -11,11 +11,6 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link
-          media="screen"
-          href="https://fonts.googleapis.com/css?family=Limelight|Open+Sans|Roboto:400,700"
-          rel="stylesheet"
-        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

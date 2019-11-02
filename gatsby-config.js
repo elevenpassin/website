@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.buoyantair.netlify.com`,
+    siteUrl: `https://buoyantair.co/`,
     title: `buoyantair`,
     description: `frontend engineer & free software enthusiast`,
     author: `buoyantair`,
@@ -8,20 +8,7 @@ module.exports = {
       {
         name: "home",
         path: "/",
-      },
-      {
-        name: "about",
-        path: "/about/",
-      },
-      {
-        name: "writings",
-        path: "/blog/",
-      },
-      {
-        name: "code",
-        path: "https://github.com/buoyantair",
-        external: true,
-      },
+      }
     ],
   },
   plugins: [
@@ -41,10 +28,10 @@ module.exports = {
         name: `buoyantair`,
         short_name: `buoyantair`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FFFFFF`,
+        theme_color: `#F9D1C9`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -55,12 +42,6 @@ module.exports = {
       },
     },
     "gatsby-transformer-remark",
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

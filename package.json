@@ -32,8 +32,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "CI=true yarn test -- --all --coverage --verbose",
-      "pre-push": "CI=true yarn test -- --all --coverage --verbose",
+      "pre-commit": "CI=true jest --all --coverage --verbose",
+      "pre-push": "CI=true jest --all --coverage --verbose",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },

@@ -13,11 +13,6 @@ const IndexPage = () => (
       I have experience working in teams, designing and developing world-class projects
       using various modern web technologies.
     </p>
-    <div>
-      <Link to="/blog">blog</Link>
-      <Link to="/newsletter">newsletter</Link>
-      <Link to="/contact">contact</Link>
-    </div>
   </Layout>
 )
 

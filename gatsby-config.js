@@ -3,6 +3,28 @@ module.exports = {
     title: `buoyantair`,
     description: `Hey! I'm a javascript developer working on open source software. I have experience working in teams, designing and developing world-class projects using various modern web technologies. `,
     author: `@buoyantair`,
+    menuItems: [
+      {
+        name: "home",
+        path: "/",
+      },
+      {
+        name: "about",
+        path: "/about",
+      },
+      {
+        name: "blog",
+        path: "/blog",
+      },
+      {
+        name: "newsletter",
+        path: "/newsletter",
+      },
+      {
+        name: "contact",
+        path: "/contact",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

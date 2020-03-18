@@ -7,38 +7,31 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+
+import "./layout.css"
+import "./app.css"
 
 import Header from "./header"
-import "./layout.css"
 import Menu from "./menu"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-          menuItems {
-            name
-            path
-          }
-        }
-      }
-    }
-  `)
+import useSiteMetadata from '../hooks/useSiteMetadata'
+
+const Layout = ({ children, noHeader }) => {
+  const { title, menuItems } = useSiteMetadata()
+
+  const displayHeader = noHeader ? null : (
+    <>
+      <Header siteTitle={title} />
+      <Menu menuItems={menuItems} />
+    </>
+  )
 
   return (
     <>
       <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
+        className="app-container"
       >
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <Menu menuItems={data.site.siteMetadata.menuItems} />
+        {displayHeader}
         <main>{children}</main>
         <footer>
           © buoyantair {new Date().getFullYear()}, Built with 💝
@@ -50,6 +43,7 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  noHeader: PropTypes.bool
 }
 
 export default Layout

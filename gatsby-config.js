@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `buoyantair`,
+    description: `Hey! I'm a javascript developer working on open source software. I have experience working in teams, designing and developing world-class projects using various modern web technologies. `,
+    author: `@buoyantair`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `buoyantair`,
+        short_name: `buoyantair`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

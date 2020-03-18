@@ -5,7 +5,7 @@ import React from "react"
 const Menu = ({ menuItems }) => (
   <nav>
     {
-      menuItems.map(item => <Link to={item.path}>{item.name}</Link>)
+      menuItems.map(item => <Link to={item.path} key={item.name}>{item.name}</Link>)
     }
   </nav>
 )

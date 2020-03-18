@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const Newsletter = () => (
   <Layout>
-    <SEO title="Newsletter | buoyantair" />
+    <SEO title="Newsletter" />
     <h1>Newsletter</h1>
   </Layout>
 )

@@ -21,8 +21,13 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "babel-jest": "^25.1.0",
+    "babel-preset-gatsby": "^0.2.36",
     "husky": "^4.2.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.1.0",
     "prettier": "^1.19.1",
+    "react-test-renderer": "^16.13.0",
     "standard-version": "^7.1.0"
   },
   "husky": {
@@ -44,7 +49,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "jest"
   },
   "repository": {
     "type": "git",

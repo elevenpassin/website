@@ -1,9 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Menu renders empty menu correctly 1`] = `<nav />`;
+exports[`Menu renders empty menu correctly 1`] = `
+<nav
+  className="menu"
+/>
+`;
 
 exports[`Menu renders menu with items correctly 1`] = `
-<nav>
+<nav
+  className="menu"
+>
   <a
     href="/"
   >

@@ -5,45 +5,40 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 
-import "./layout.css"
-import "./app.css"
+import "./layout.css";
+import "./app.css";
 
-import Header from "./header"
-import Menu from "./menu"
+import Header from "./header";
+import Menu from "./menu";
 
-import useSiteMetadata from '../hooks/useSiteMetadata'
+import useSiteMetadata from "../hooks/useSiteMetadata";
 
 const Layout = ({ children, noHeader }) => {
-  const { title, menuItems } = useSiteMetadata()
+  const { menuItems } = useSiteMetadata();
 
-  const displayHeader = noHeader ? null : (
+  const displayMenu = noHeader ? null : (
     <>
-      <Header siteTitle={title} />
       <Menu menuItems={menuItems} />
     </>
-  )
+  );
 
   return (
     <>
-      <div
-        className="app-container"
-      >
-        {displayHeader}
+      <div className="app-container">
+        {displayMenu}
         <main>{children}</main>
-        <footer>
-          © buoyantair {new Date().getFullYear()}, Built with 💝
-        </footer>
+        <footer>© buoyantair {new Date().getFullYear()}, Built with 💝</footer>
       </div>
     </>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   noHeader: PropTypes.bool
-}
+};
 
-export default Layout
+export default Layout;

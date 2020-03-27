@@ -11,7 +11,6 @@ import PropTypes from "prop-types";
 import "./layout.css";
 import "./app.css";
 
-import Header from "./header";
 import Menu from "./menu";
 
 import useSiteMetadata from "../hooks/useSiteMetadata";
@@ -19,20 +18,14 @@ import useSiteMetadata from "../hooks/useSiteMetadata";
 const Layout = ({ children, noHeader }) => {
   const { menuItems } = useSiteMetadata();
 
-  const displayMenu = noHeader ? null : (
-    <>
-      <Menu menuItems={menuItems} />
-    </>
-  );
+  const displayMenu = noHeader ? null : <Menu menuItems={menuItems} />;
 
   return (
-    <>
-      <div className="app-container">
-        {displayMenu}
-        <main>{children}</main>
-        <footer>© buoyantair {new Date().getFullYear()}, Built with 💝</footer>
-      </div>
-    </>
+    <div className="app-container">
+      {displayMenu}
+      <main>{children}</main>
+      <footer>© buoyantair {new Date().getFullYear()}, Built with 💝</footer>
+    </div>
   );
 };
 

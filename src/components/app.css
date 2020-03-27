@@ -1,7 +1,7 @@
 .app-container {
-  margin: 0 auto;
+  margin: auto 20px;
+  min-width: 375px;
   max-width: 768px;
-  padding: 0 1rem 1.45rem;
 }
 
 a,
@@ -17,4 +17,10 @@ a:hover {
 
 a.active {
   font-weight: bold;
+}
+
+.avatar {
+  display: block;
+  background: lightgray;
+  border-radius: 100%;
 }

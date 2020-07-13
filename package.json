@@ -23,7 +23,7 @@
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.19",
-    "standard-version": "^5.0.2",
+    "standard-version": "^8.0.1",
     "typography": "^0.16.19",
     "typography-plugin-code": "^0.16.19",
     "typography-theme-doelger": "^0.16.19"
